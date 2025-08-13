@@ -21,3 +21,13 @@ boton.innerText="Peligro";
 boton2.innerText="No Peligro";
 document.body.appendChild(boton);
 document.body.appendChild(boton2);
+//eventos en javascript//
+boton.addEventListener("click",()=>{
+    peligro=false;
+    recordatorio=spiderman(peligro);
+    window.location.href="index.html"
+    document.body.innerHTML=`
+    <h1>${recordando} </h1>
+    <button id='boton2'><a href='index.html'>volver</a>/button>
+    `;
+});
